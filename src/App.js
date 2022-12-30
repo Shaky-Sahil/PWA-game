@@ -90,10 +90,10 @@ function App() {
         {cards.map((card) => {
           // Destructured card properties
           const { image, matched } = card;
-          console.log("something's happening atleast");
+          console.log(image);
           return (
             <Card
-              key={image.id}
+              key={card.id}
               card={card}
               image={image}
               onClick={() => handleClick(card)}

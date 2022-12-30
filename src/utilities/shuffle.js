@@ -1,18 +1,18 @@
 const shuffle = () => {
 
     const assets = [
-        { image: '/assets/17pwa.jpg'},
-        { image: '/assets/16pwa.jpg'},
-        { image: '/assets/5pwa.jpg'},
-        { image: '/assets/7pwa.jpg'},
-        { image: '/assets/11pwa.jpg'},
-        { image: '/assets/10pwa.jpg'},
-        { image: '/assets/1pwa.jpg'},
-        { image: '/assets/13pwa.jpg'}
+        { image: '/assets/17pwa.ico'},
+        { image: '/assets/16pwa.ico'},
+        { image: '/assets/5pwa.ico'},
+        { image: '/assets/7pwa.ico'},
+        { image: '/assets/11pwa.ico'},
+        { image: '/assets/10pwa.ico'},
+        { image: '/assets/1pwa.ico'},
+        { image: '/assets/13pwa.ico'}
     ]
     return [...assets,...assets]
     .sort(() => Math.random() - 0.5)
-    .map((card) => ({...card, id:Math.random()}));
+    .map((card) => ({...card, id:Math.random()*100}));
 };
 
 export default shuffle;
