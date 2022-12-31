@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 //import Header from './Components/Header';
-import useAppBadge from './hooks/useAppBadge';
+
 import shuffle from './utilities/shuffle';
 import Card from './Components/Card';
 
